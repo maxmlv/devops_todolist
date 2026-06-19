@@ -23,7 +23,7 @@ COPY --from=base /app /app
 
 RUN python manage.py migrate
 
-EXPOSE 8000
+EXPOSE 8080
 
 ENTRYPOINT ["python", "manage.py", "runserver"]
 CMD ["0.0.0.0:8080"]
